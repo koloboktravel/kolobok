@@ -1,0 +1,13 @@
+= simple_form_for tour, url: url do |f|
+  = f.input :name
+  = f.association :city
+  = f.association :provider
+  = image_tag tour.image_url(:thumb) if tour.image?
+  = f.input :image
+  = f.input :annotation
+  = f.input :description
+  = f.input :start_date
+  = f.input :finish_date
+  = f.input :price
+  
+  = f.submit 'Готово', class: [:btn, 'btn-lg', 'btn-success']

@@ -1,0 +1,6 @@
+%legend
+  Добавить провайдера
+
+.row
+  .col-md-8
+    = render partial: 'admin/providers/form', locals: {provider: @provider, url: admin_providers_path}

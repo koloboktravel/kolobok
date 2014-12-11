@@ -1,0 +1,27 @@
+%legend
+  Провайдеры
+
+  %a.btn{href: new_admin_provider_path, style: 'float: right'} Добавить
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td
+        Название
+      %td
+        Количество туров
+      %td
+        = '...'
+
+  %tbody
+    - @providers.each do |provider|
+      %tr
+        %td
+          = provider.name
+        %td
+          = provider.tours_count.to_s
+
+        %td
+          = link_to 'редактировать', edit_admin_provider_path(provider)
+          = link_to 'удалить', admin_provider_path(provider), method: :delete, confirm: 'Удалить провайдера?'

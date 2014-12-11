@@ -1,0 +1,5 @@
+= simple_form_for provider, url: url do |f|
+  = f.input :name
+  -#= image_tag article.image_url(:thumb) if article.image?
+  -#= f.input :image
+  = f.submit 'Готово', class: [:btn, 'btn-lg', 'btn-success']

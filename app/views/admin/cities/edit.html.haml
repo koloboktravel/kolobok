@@ -1,0 +1,6 @@
+%legend
+  Изменить город
+
+.row
+  .col-md-8
+    = render partial: 'admin/cities/form', locals: {city: @city, url: admin_city_path(@city)}

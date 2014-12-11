@@ -1,0 +1,27 @@
+%nav.navbar.navbar-default{role: :navigation}
+  .container
+    .navbar-header
+      %button.navbar-toggle{type: :button, 'data-toggle' => 'collapse'}
+        %span.sr-only
+          Toggle Navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: admin_tours_path}
+        ADMIN
+
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li{class: params[:controller] == 'admin/tours' ? 'active' : ''}
+          %a{href: admin_tours_path}
+            Туры
+
+        %li{class: params[:controller] == 'admin/cities' ? 'active' : ''}
+          %a{href: admin_cities_path}
+            Города
+
+
+        %li{class: params[:controller] == 'admin/providers' ? 'active' : ''}
+          %a{href: admin_providers_path}
+            Провайдеры
+            

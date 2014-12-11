@@ -1,0 +1,31 @@
+%legend
+  Туры
+
+  %a.btn{href: new_admin_tour_path, style: 'float: right'} Добавить
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td
+        Название
+      %td
+        Город
+      %td
+        Провайдер
+      %td
+        = '...'
+
+  %tbody
+    - @tours.each do |tour|
+      %tr
+        %td
+          = tour.name
+        %td
+          = tour.city.name
+        %td
+          = tour.provider.name
+
+        %td
+          = link_to 'редактировать', edit_admin_tour_path(tour)
+          = link_to 'удалить', admin_tour_path(tour), method: :delete, confirm: 'Удалить тур?'

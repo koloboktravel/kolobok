@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  annotation: MyText
+  description: MyText
+  start_date: 2014-12-04
+  finish_date: 2014-12-04
+  price: 1
+
+two:
+  name: MyString
+  annotation: MyText
+  description: MyText
+  start_date: 2014-12-04
+  finish_date: 2014-12-04
+  price: 1

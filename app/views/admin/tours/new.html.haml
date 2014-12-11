@@ -1,0 +1,6 @@
+%legend
+  Добавить тур
+
+.row
+  .col-md-8
+    = render partial: 'admin/tours/form', locals: {tour: @tour, url: admin_tours_path}

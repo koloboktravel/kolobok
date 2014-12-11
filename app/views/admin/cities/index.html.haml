@@ -1,0 +1,27 @@
+%legend
+  Города
+
+  %a.btn{href: new_admin_city_path, style: 'float: right'} Добавить
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td
+        Название
+      %td
+        Количество туров
+      %td
+        = '...'
+
+  %tbody
+    - @cities.each do |city|
+      %tr
+        %td
+          = city.name
+        %td
+          = city.tours_count.to_s
+
+        %td
+          = link_to 'редактировать', edit_admin_city_path(city)
+          = link_to 'удалить', admin_city_path(city), method: :delete, confirm: 'Удалить город?'

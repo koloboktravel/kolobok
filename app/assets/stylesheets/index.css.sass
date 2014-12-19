@@ -1,0 +1,180 @@
+@font-face
+  font-family: 'HelveticaNeue-Thin'
+  src: asset-url('fonts/HelveticaNeueCyr-Thin.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Light'
+  src: asset-url('fonts/HelveticaNeueCyr-Light.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Regular'
+  src: asset-url('fonts/HelveticaNeueCyr-Regular.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Medium'
+  src: asset-url('fonts/HelveticaNeueCyr-Medium.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue-Bold'
+  src: asset-url('fonts/HelveticaNeueCyr-Bold.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+body
+  min-width: 1200px
+  min-height: 600px
+  font-family: 'HelveticaNeue-Light'
+  color: #565A5C
+
+
+.wrapper
+  width: 940px
+  margin: 0px auto
+
+.clearfix
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.relative
+  position: relative
+
+.inheritance-height
+  height: 100%
+
+
+section
+  padding: 50px 0
+
+  &.striped
+    background: #f7f7f7
+
+  .title
+    height: 50px
+    line-height: 50px
+    font-size: 32px
+    font-family: "HelveticaNeue-Thin"
+    margin-bottom: 50px
+    color: #372D2C
+    text-align: center
+
+    &.small
+      font-size: 24px
+      line-height: 30px
+
+    &.min-margin-bottom
+      margin-bottom: 25px
+
+  .subtitle
+    font-size: 18px
+    line-height: 24px
+    color: #4F5254
+    text-align: center
+
+
+ul.nav
+
+  li
+    display: inline
+    margin-right: 20px
+    height: 80px
+    line-height: 80px
+
+    a
+      color: #565A5C
+      text-decoration: none
+      font-size: 14px
+
+      &.ghost-signin
+        border: 1px solid #565A5C
+        padding: 15px 40px
+
+.topbar
+  width: 100%
+  height: 80px
+
+  .logo
+    float: left
+    width: 250px
+    height: 50px
+    margin-top: 15px
+    background: blue
+
+  ul.nav
+    float: right
+
+    li
+      a
+        color: #565A5C
+
+        &.ghost-signin
+          border: 1px solid #565A5C
+
+
+.intro
+  width: 100%
+  height: 700px
+  background: #333
+
+  .topbar
+    ul.nav
+      li
+        a
+          color: #fff
+
+          &.ghost-signin
+            border: 1px solid #fff
+
+  .intro-title
+    font-size: 48px
+    font-family: 'HelveticaNeue-Bold'
+    color: #fff
+    margin-top: 150px
+    text-align: center
+
+  .intro-subtitle
+    margin-top: 50px
+    font-size: 24px
+    color: #fff
+    font-family: 'HelveticaNeue-Light'
+    line-height: 32px
+    text-align: center
+
+  .about-project
+    margin: 0px auto
+    margin-top: 160px
+    font-family: 'HelveticaNeue-Bold'
+    font-size: 24px
+    color: #fff
+    border: 3px solid #fff
+    width: 320px
+    height: 80px
+    text-align: center
+    line-height: 80px
+
+    cursor: pointer
+
+
+#footer
+  width: 100%
+  height: 100px
+  line-height: 100px
+
+  .copy
+    float: left
+
+  ul.nav
+    float: right
+

@@ -1,0 +1,58 @@
+.intro
+  .topbar
+    .wrapper
+      .logo
+
+      %ul.nav
+        %li
+          = link_to 'Все города', root_path
+        %li
+          = link_to 'О проекте', root_path
+        %li
+          = link_to 'Партнерам', root_path
+        %li
+          = link_to 'Войти', root_path, class: 'ghost-signin'
+
+  .intro-title
+    Экскурсии и туры по городам России
+
+  .intro-subtitle
+    Путешествуй по родной стране, узнавай новые места,
+    %br
+    получай яркие впечатления
+
+  .about-project
+    Подробнее о проекте
+
+
+%section
+  .wrapper
+    .title
+      Популярные города
+
+    .cities.clearfix
+      - @cities.each do |city|
+        = render partial: 'cities/city', locals: {city: city}
+
+%section.striped
+  .wrapper
+    .title
+      Популярные экскурсии
+
+    .tours.clearfix
+      - @tours.each do |tour|
+        = render partial: 'tours/tour', locals: {tour: tour}
+
+
+#footer
+  .wrapper
+    .copy
+      &copy;
+      Колобок.travel
+    %ul.nav
+      %li
+        = link_to 'Все города', root_path
+      %li
+        = link_to 'О проекте', root_path
+      %li
+        = link_to 'Партнерам', root_path

@@ -1,0 +1,72 @@
+#tour
+  .wrapper
+    .name
+      = @tour.name
+    .details.clearfix
+
+      .content
+
+        .gallery
+          .image
+          .previews.clearfix
+            .preview
+            .preview
+            .preview
+            .preview
+
+        .about
+          .title
+            Описание экскурсии
+          .text
+            = @tour.description
+
+        .button
+          Забронировать экскурсию
+
+      .sidebar
+        .block
+          .params
+            Продолжительность:
+            %strong
+              3 часа
+
+            %br
+
+            Тип экскурсии: 
+            %strong
+              Автобусная
+
+            %br
+
+            Для какой компании:
+            %strong
+              до 40 человек
+
+        .block.tall
+          .price
+            2 900 Р
+          за человека
+
+          .button
+            Забронировать
+
+        .block.tall
+
+
+          .avatar
+
+          .provider-name 
+            Елена Румянцева
+
+          .provider-about 
+            официальный представитель
+            компании «Туры по Волге» 
+
+
+
+          .button
+            Задать вопрос гиду
+
+
+
+        

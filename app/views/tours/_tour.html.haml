@@ -1,0 +1,19 @@
+.tour
+  = image_tag tour.image_url(:thumb)
+  .params.clearfix
+    .city
+      = tour.city.name
+    .duration
+      3 часа
+
+  .name
+    = link_to tour.name, tour_path(tour)
+
+  .desc
+    = link_to tour.annotation, tour_path(tour)
+
+  .price
+    %span.value
+      = tour.price.to_s
+      рублей
+    за человека

@@ -14,7 +14,7 @@ class TourImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :thumb do
-    process :resize_to_fill => [240, 160]
+    process :resize_to_fill => [300, 240]
   end
 
   version :mini do
